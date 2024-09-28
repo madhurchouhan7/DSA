@@ -6,8 +6,8 @@ public class MergeSort {
         int lengthOfArray = array.length;
 
         System.out.println("Before Sorting : ");
-        for (int j : array) {
-            System.out.print(" " + j);
+        for (int i=0; i < lengthOfArray; i++){
+            System.out.print(" " + array[i]);
         }
 
         mergeSort(array, lengthOfArray);

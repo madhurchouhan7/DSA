@@ -13,7 +13,7 @@ public class FindTheLargestNumber {
         findLargestNumber(array, length);
     }
     public static int findLargestNumber(int[] array, int length){
-        int maxNumber = 0;
+        int maxNumber = Integer.MIN_VALUE;
         for (int i = 0; i < length; i++){
             if (array[i] > maxNumber){
                 maxNumber = array[i];

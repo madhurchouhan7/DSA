@@ -2,7 +2,7 @@ package Problem_Solving_on_Arrays;
 
 public class SecondLargestElement {
     public static void main(String[] args) {
-        int[] array = {64,56,45,6,546,45,645,623424};
+        int[] array = {1,2,3,4,5,6,7,8,9,10};
         int length = array.length;
 
         System.out.println("Array is :");
@@ -13,7 +13,9 @@ public class SecondLargestElement {
     }
 
     public static void  findSecondLargestNumber(int[] array, int length){
-        int secondLargestNumber = Integer.MAX_VALUE;
+
+        // assigning both the least number any variable can have.
+        int secondLargestNumber = Integer.MIN_VALUE;
         int largestNumber = Integer.MIN_VALUE;
 
         for (int i=0; i < length; i++){

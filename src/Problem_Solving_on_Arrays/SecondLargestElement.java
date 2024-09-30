@@ -29,7 +29,8 @@ public class SecondLargestElement {
         if (secondLargestNumber == Integer.MIN_VALUE){
             System.out.println("\n No  Second Largest Element Found");
         }
-        System.out.println();
-        System.out.println("Second Largest Number is: " + secondLargestNumber);
+        else {
+            System.out.println("\nSecond Largest Number is: " + secondLargestNumber);
+        }
     }
 }

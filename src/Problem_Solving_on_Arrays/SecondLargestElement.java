@@ -9,13 +9,27 @@ public class SecondLargestElement {
         for (int i = 0; i < length; i++){
             System.out.print(" " + array[i]);
         }
-        findSecondLargestNumeber(array,length);
+        findSecondLargestNumber(array,length);
     }
 
-    public static int findSecondLargestNumeber(int[] array, int length){
-        int secondLargestNumber = 0;
+    public static void  findSecondLargestNumber(int[] array, int length){
+        int secondLargestNumber = Integer.MAX_VALUE;
+        int largestNumber = Integer.MIN_VALUE;
+
+        for (int i=0; i < length; i++){
+            if (array[i] > largestNumber){
+                secondLargestNumber = largestNumber;
+                largestNumber = array[i];
+            }
+            else if(array[i] > secondLargestNumber && array[i] != largestNumber){
+                secondLargestNumber = array[i];
+            }
+        }
+
+        if (secondLargestNumber == Integer.MIN_VALUE){
+            System.out.println("\n No  Second Largest Element Found");
+        }
         System.out.println();
         System.out.println("Second Largest Number is: " + secondLargestNumber);
-        return secondLargestNumber;
     }
 }
